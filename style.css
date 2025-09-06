@@ -1,0 +1,118 @@
+/* ===== General Page Styling ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  margin: 0;
+}
+
+/* ===== Todo App Container ===== */
+.container {
+  background: #fff;
+  width: 400px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ===== Input & Button ===== */
+#inputBox {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+#inputBox:focus {
+  border: 2px solid #6a5acd;
+}
+
+#addBtn {
+  width: 25%;
+  padding: 10px;
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #6a5acd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#addBtn:hover {
+  background: #5848b9;
+}
+
+/* ===== Todo List Styling ===== */
+#todoList {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+#todoList li {
+  background: #f9f9f9;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#todoList li p {
+  margin: 0;
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+/* ===== Buttons inside list ===== */
+.btn {
+  padding: 6px 12px;
+  margin-left: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
+}
+
+/* Edit Button */
+.editBtn {
+  background: #4caf50;
+  color: white;
+}
+
+.editBtn:hover {
+  background: #43a047;
+  transform: scale(1.05);
+}
+
+/* Delete Button */
+.deleteBtn {
+  background: #e53935;
+  color: white;
+}
+
+.deleteBtn:hover {
+  background: #c62828;
+  transform: scale(1.05);
+}
